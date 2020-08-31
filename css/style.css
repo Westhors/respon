@@ -1,0 +1,647 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(241, 241, 241);
+}
+.under-line::before {
+  content: "";
+  background-color: rgb(139, 236, 47);
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*Start NavBar*/
+header {
+  background-image: url("../img/Header.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+header .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+header .content-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+header .content-header h1 {
+  font-size: 76px;
+  font-weight: 900;
+}
+header .content-header h2 {
+  font-size: 35px;
+}
+header .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: color 0.6s ease-out;
+  font-weight: 600;
+  position: relative;
+}
+.navbar-nav .nav-link .bord-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(139, 236, 47);
+  transition: width 0.5s ease-out;
+}
+.bg-light {
+  background-color: rgba(0, 0, 0, 0.295) !important;
+}
+nav .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff !important;
+}
+nav span {
+  color: rgb(139, 236, 47);
+  font-size: 35px;
+  font-weight: 100;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.fa-bars {
+  font-size: 40px;
+  color: rgb(139, 236, 47);
+}
+@media (min-width: 992px) {
+  .navbar-nav .nav-link:hover {
+    color: rgb(139, 236, 47) !important;
+  }
+  .navbar-nav .nav-link:hover .bord-bottom {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    top: 30px;
+    position: relative;
+    z-index: 9999;
+  }
+  .navbar-nav li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(139, 236, 47);
+  }
+}
+/*End NavBar*/
+/*Start About*/
+.About {
+  padding: 60px 0;
+}
+.About .contaire-about {
+  background-color: #ffffff;
+  padding: 60px 60px 64px 60px;
+  box-shadow: 0px 0px 6px rgba(126, 126, 126, 0.329);
+}
+.About .content-about {
+  width: 100%;
+}
+.About .img-info img {
+  width: 100%;
+  border-radius: 5px;
+}
+.About .content-about .info {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+.About .content-about .info span {
+  font-weight: 900;
+  margin-right: 10px;
+}
+.About .content-about .info div {
+  margin-bottom: 20px;
+}
+.About .progress {
+  margin: 30px 0;
+  width: 100%;
+}
+.About .content-progress {
+  border: 1px solid transparent;
+  height: 73px;
+}
+.About .content-progress h6 {
+  float: left;
+}
+.About .content-progress p {
+  float: right;
+}
+.About h4 {
+  padding: 20px 0;
+}
+.About .progress-bar {
+  background-color: rgb(173, 235, 51);
+}
+.About .progress {
+  border-radius: 0px;
+}
+.About .info-me {
+  margin-left: 10px;
+}
+.About .info-me p {
+  margin-bottom: 40px;
+  font-size: 21px;
+}
+.About .info-me h2 {
+  margin-bottom: 35px;
+  font-weight: 900;
+  position: relative;
+}
+.About .info-me h2:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(173, 235, 51);
+  width: 20%;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+}
+.About .progress-skills {
+  margin-bottom: 32px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .About .img-info img {
+    width: 100%;
+    height: 100%;
+  }
+  .About .content-about .info {
+    font-size: 14px;
+  }
+}
+/*End About*/
+/*Start Services*/
+.Services {
+  padding: 40px 0;
+  text-align: center;
+}
+.Services h2 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.Services p {
+  position: relative;
+}
+.Services .card-services {
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px rgba(126, 126, 126, 0.329);
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 29px;
+}
+.Services .content-services {
+  margin-top: 75px;
+}
+.Services .content-services i {
+  font-size: 52px;
+  border: 10px solid rgb(173, 235, 51);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  line-height: 101px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease-out;
+}
+.Services .content-services h4 {
+  font-weight: 900;
+}
+.Services .card-services:hover i {
+  color: #ffffff;
+  background-color: rgb(173, 235, 51);
+  border-color: rgb(201, 226, 149);
+}
+@media (max-width: 1199px) {
+  .Services .card-services h4 {
+    font-size: 20px;
+  }
+}
+/*End Services*/
+/*Start Datas*/
+.Datas {
+  background-image: url("../img/A1.jpg");
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.Datas .overlay {
+  background-color: rgba(174, 235, 51, 0.836);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Datas .datas-services {
+  padding: 30px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 29px;
+  color: #ffffff;
+}
+.Datas .content-datas {
+  margin-top: 75px;
+}
+.Datas .content-datas i {
+  font-size: 52px;
+  border: 10px solid rgba(115, 133, 80, 0.301);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  line-height: 101px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease-out;
+}
+.Datas .content-datas h4 {
+  font-weight: 900;
+}
+@media (max-width: 991px) {
+  .Datas {
+    height: 600px;
+  }
+}
+/*End Datas*/
+/*Start Portfolio*/
+.Portfolio {
+  padding: 40px 0;
+  text-align: center;
+}
+.Portfolio h2 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.Portfolio p {
+  position: relative;
+}
+.Portfolio .card-port {
+  width: 100%;
+}
+.Portfolio .content-port {
+  margin-top: 80px;
+}
+.Portfolio .card-port .card {
+  width: 100% !important;
+  box-shadow: 0px 0px 6px rgba(126, 126, 126, 0.329);
+  margin-bottom: 33px;
+}
+.Portfolio .contaier-img {
+  width: 100%;
+  height: 217px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Portfolio .contaier-img:hover img {
+  transform: scale(1.2);
+}
+.Portfolio .contaier-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.Portfolio .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 33px 12px;
+}
+.Portfolio .card-body .left-card {
+  flex: 4;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Portfolio .card-body .left-card h5 {
+  font-size: 17px;
+  font-weight: 900;
+}
+.Portfolio .card-body .left-card p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.Portfolio .card-body .left-card p span {
+  color: rgb(132, 184, 28);
+}
+.Portfolio .card-body .right-card {
+  flex: 1;
+  text-align: right;
+}
+.Portfolio .card-body .right-card i {
+  color: rgb(132, 184, 28);
+  font-size: 27px;
+  width: 47px;
+  height: 47px;
+  border: 3px solid rgb(132, 184, 28);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 41px;
+}
+/*End Portfolio*/
+/*Start Testimonial*/
+.Testimonial {
+  background-image: url("../img/forest.jpg");
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.Testimonial .container-img {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.Testimonial .container-img img {
+  width: 100%;
+  height: 100%;
+}
+.Testimonial .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(174, 235, 51, 0.808);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+.Testimonial h2 {
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: rgb(41, 48, 28);
+}
+.Testimonial p {
+  font-size: 19px;
+  max-width: 800px;
+  padding: 0 30px;
+}
+/*End Testimonial*/
+/*Start Blog*/
+.Blog {
+  padding: 40px 0;
+  text-align: center;
+}
+.Blog h2 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.Blog p {
+  position: relative;
+}
+.Blog .card-blog {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px rgba(126, 126, 126, 0.329);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 29px;
+}
+.Blog .contaier-img {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+.Blog .contaier-img h5 {
+  color: #ffffff;
+  background-color: rgb(174, 235, 51);
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 5px 10px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 3px;
+  font-weight: 900;
+  text-align: center;
+}
+.Blog .card {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 3px;
+}
+.Blog .contaier-img img {
+  width: 100%;
+  height: 100%;
+}
+.Blog .contaire-blog {
+  margin-top: 80px;
+}
+.Blog .content-blog {
+  margin-top: 25px;
+  text-align: left;
+}
+.Blog .content-blog h4 {
+  font-weight: 900;
+  margin-bottom: 16px;
+  font-size: 20px;
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+}
+.Blog .content-blog h4:hover {
+  color: rgb(173, 235, 51);
+}
+.Blog .footer-card {
+  padding: 13px 15px;
+  background-color: rgb(241, 241, 241);
+  border-top: 1px solid rgb(202, 202, 202);
+  display: flex;
+}
+.Blog .footer-card .container-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Blog .footer-card .container-img img {
+  width: 100%;
+  height: 100%;
+}
+.Blog .footer-partleft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 2;
+}
+.Blog .footer-partleft h6 {
+  margin: 0;
+  margin-left: 12px;
+}
+.Blog .footer-partright {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Blog .footer-partright span {
+  margin-left: 7px;
+}
+/*End Blog*/
+/*Start Contact*/
+.Contact {
+  background-image: url("../img/forest.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.Contact .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(174, 235, 51, 0.808);
+  padding-bottom: 100px;
+  position: absolute;
+  padding: 40px 0;
+  z-index: 1;
+}
+.Contact .container {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  z-index: 2;
+  position: relative;
+  margin: 80px auto;
+}
+.Contact .container form input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid rgb(187, 187, 187);
+  margin-bottom: 25px;
+}
+.Contact .container form textarea {
+  border: 1px solid rgb(187, 187, 187);
+  width: 100%;
+  height: 130px;
+  resize: none;
+  outline: none;
+  margin-bottom: 25px;
+}
+.Contact .container form button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: rgb(173, 235, 51);
+  color: #ffffff;
+  padding: 15px 23px;
+  border-radius: 17rem;
+  transition: all 0.6s ease-out;
+  margin-bottom: 30px;
+}
+.Contact .container form button:hover {
+  background-color: rgb(189, 233, 103);
+}
+.Contact .container h2 {
+  position: relative;
+  margin-bottom: 60px;
+  font-weight: 900;
+}
+.Contact .container h2:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(173, 235, 51);
+  width: 20%;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+}
+.Contact ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+.Contact ul li {
+  padding: 7px 7px 7px 0px;
+}
+.Contact ul li span {
+  margin-left: 10px;
+}
+.Contact ul i {
+  color: rgb(173, 235, 51);
+}
+.Contact .icons-contact i {
+  font-size: 22px;
+  border: 2px solid rgb(173, 235, 51);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.Contact .icons-contact i:hover {
+  color: #ffffff;
+  background-color: rgb(173, 235, 51);
+  border-color: rgb(201, 226, 149);
+}
+/*End Contact*/
+/*Start Footer*/
+.Footer {
+  text-align: center;
+  background-color: rgb(173, 235, 51);
+  padding: 20px;
+  color: #575757;
+  font-weight: 900;
+}
+/*End Footer*/
+/*rgb(173, 235, 51)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
